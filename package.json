@@ -4,6 +4,7 @@
   },
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "The Brain Games project",
   "main": "index.js",
   "devDependencies": {},
