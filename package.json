@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "http-server": "^14.1.1"
-  }
+  },
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "The Brain Games project",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BEAR-AE/frontend-project-44.git"
+  },
+  "author": "Alexander Eremin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BEAR-AE/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/BEAR-AE/frontend-project-44#readme"
 }
