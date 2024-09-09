@@ -2,8 +2,9 @@ import startGame from '../index.js';
 import getRandomInt from '../getRandomInt.js';
 import getRandomNumber from '../getRandomNumber.js';
 
+const toCalc = 'What is the result of the expression?';
 const startCalc = () => {
-  const noteToCalc = 'What is the result of the expression?';
+  const noteToCalc = toCalc;
 
   const taskCalc = () => {
     const number1 = getRandomNumber();
