@@ -9,8 +9,10 @@ const startGame = (gameDescription, generateQuestionAndAnswer) => {
   console.log(gameDescription);
 
   const numberOfRounds = 3;
+
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < numberOfRounds; i++) {
-    const { question, correctAnswer } = generateQuestionAndAnswer();
+    const [question, correctAnswer] = generateQuestionAndAnswer();
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question("Your answer: ");
