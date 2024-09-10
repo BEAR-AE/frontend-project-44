@@ -14,7 +14,7 @@ const calculate = (sign, number1, number2) => {
     case '*':
       return number1 * number2;
     default:
-      throw new Error('Unknown operator');
+      throw new Error('Incorrect answer');
   }
 };
 
