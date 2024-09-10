@@ -3,6 +3,7 @@ import getRandomInt from '../getRandomInt.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 const toCalc = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
 const startCalc = () => {
   const noteToCalc = toCalc;
 
@@ -10,7 +11,7 @@ const startCalc = () => {
     const number1 = getRandomNumber();
     const number2 = getRandomNumber();
 
-    const signs = ['+', '-', '*'];
+    const signs = operators;
     const sign = signs[getRandomInt(signs.length)];
 
     const question = `${number1} ${sign} ${number2}`;
