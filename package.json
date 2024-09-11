@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "http-server": "^14.1.1",
+    "npm": "^10.8.3",
     "readline-sync": "^1.4.10"
   },
   "name": "@hexlet/code",
