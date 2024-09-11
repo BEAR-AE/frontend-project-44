@@ -4,7 +4,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1f622fb3c0c860bc13b6/maintainability)](https://codeclimate.com/github/BEAR-AE/frontend-project-44/maintainability)
 
-### Project Brain-Games
+# **_Project Brain-Games_**<br>
 
 Сколько будет "17 + 67", за сколько секунд или минут Вы решите эту простую задачу? Что такое "простое число" можете ли Вы сказать не раздумывая? Давайте прямо скажем не все. В этих вопросах Вам поможет "Project Brain-Games". Занимаясь по 15-20 минут в день Вы будете поддерживать свой разум в тонусе.
 
