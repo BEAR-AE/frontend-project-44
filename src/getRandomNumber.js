@@ -1,4 +1,3 @@
-/* eslint-disable no-irregular-whitespace */
-const getRandomNumber = () => Math.floor(Math.random() * 50);
+const getRandomNumber = (max = 50) => Math.floor(Math.random() * max);
 
-export default getRandomNumber; // range of values ​​is from 0 to 49
+export default getRandomNumber; // Range of values from 0 to 49.
