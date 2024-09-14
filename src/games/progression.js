@@ -1,5 +1,4 @@
 import startGame from '../index.js';
-import getRandomInt from '../getRandomInt.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 const generatesProgression = (startNumber, step, sequence) => {
@@ -18,7 +17,7 @@ const startProgression = () => {
     const sequence = [];
     const lastIndex = 9;
     const getStep = () => {
-      const necessaryStep = getRandomInt(lastIndex);
+      const necessaryStep = getRandomNumber(lastIndex);
       return necessaryStep === 0 ? getStep() : necessaryStep;
     };
     const step = getStep();
@@ -33,7 +32,7 @@ const startProgression = () => {
     };
     const startNumber = getStartNumber();
     generatesProgression(startNumber, step, sequence);
-    const randomIndex = getRandomInt(lastIndex);
+    const randomIndex = getRandomNumber(lastIndex);
     const result = sequence[randomIndex];
     sequence[randomIndex] = '..';
 

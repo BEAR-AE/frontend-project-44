@@ -1,5 +1,4 @@
 import startGame from '../index.js';
-import getRandomInt from '../getRandomInt.js';
 import getRandomNumber from '../getRandomNumber.js';
 
 const toCalc = 'What is the result of the expression?';
@@ -25,7 +24,7 @@ const startCalc = () => {
     const number1 = getRandomNumber();
     const number2 = getRandomNumber();
 
-    const sign = operators[getRandomInt(operators.length)];
+    const sign = operators[getRandomNumber(operators.length)];
 
     const result = calculate(sign, number1, number2);
     const question = `${number1} ${sign} ${number2}`;
