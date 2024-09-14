@@ -8,14 +8,12 @@ const calculateGcd = (number1, number2) => {
   return calculateGcd(number2, number1 % number2);
 };
 
-const toCalcConditions = (getGcd) => (number1, number2) => getGcd(number1, number2);
-
 const startGCD = () => {
   const noteToGcd = 'Find the greatest common divisor of given numbers.';
   const taskGcd = () => {
     const number1 = getRandomNumber();
     const number2 = getRandomNumber();
-    const getGcd = toCalcConditions(calculateGcd);
+    const getGcd = calculateGcd;
     const question = `${number1} ${number2}`;
     const result = getGcd(number1, number2).toString();
     return [question, result];
