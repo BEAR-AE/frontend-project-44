@@ -34,13 +34,15 @@ const startProgression = () => {
     const startNumber = getStartNumber();
     generatesProgression(startNumber, step, sequence);
     const randomIndex = getRandomInt(lastIndex);
-    const replacedNumber = sequence[randomIndex];
-    let result = replacedNumber;
+    const result = sequence[randomIndex];
     sequence[randomIndex] = '..';
+
     const question = sequence.join(' ');
-    result = result.toString();
-    return [question, result];
+
+    return [question, result.toString()];
   };
+
   startGame(noteToProgression, taskProgression);
 };
+
 export default startProgression;
