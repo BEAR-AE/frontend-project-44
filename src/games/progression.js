@@ -2,7 +2,7 @@ import startGame from '../index.js';
 import getRandomInt from '../getRandomInt.js';
 import getRandomNumber from '../getRandomNumber.js';
 
-const getLength = (startNumber, step, sequence) => {
+const generatesProgression = (startNumber, step, sequence) => {
   for (
     let i = 0, nextNumber = startNumber;
     i < 10;
@@ -32,7 +32,7 @@ const startProgression = () => {
       return number;
     };
     const startNumber = getStartNumber();
-    getLength(startNumber, step, sequence);
+    generatesProgression(startNumber, step, sequence);
     const randomIndex = getRandomInt(lastIndex);
     const replacedNumber = sequence[randomIndex];
     let result = replacedNumber;

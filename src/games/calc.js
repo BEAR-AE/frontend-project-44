@@ -25,8 +25,7 @@ const startCalc = () => {
     const number1 = getRandomNumber();
     const number2 = getRandomNumber();
 
-    const signs = operators;
-    const sign = signs[getRandomInt(signs.length)];
+    const sign = operators[getRandomInt(operators.length)];
 
     const result = calculate(sign, number1, number2);
     const question = `${number1} ${sign} ${number2}`;
